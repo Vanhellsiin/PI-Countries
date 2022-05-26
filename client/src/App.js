@@ -1,10 +1,17 @@
+import { BrowserRouter, Route } from 'react-router-dom';
+import React from 'react';
+import LandingPage from './componentes/LandingPage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Henry Countries</h1>
-    </div>
+    <BrowserRouter>
+    <React.Fragment>
+
+        <Route exact path='/' component={LandingPage}/>
+
+    </React.Fragment>
+    </BrowserRouter>
   );
 }
 
