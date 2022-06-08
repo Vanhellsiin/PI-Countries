@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:url("https://www.bbva.com/wp-content/uploads/2017/12/billetes-avion-viajes-tarifas-comparacion-precios-ahorro-compra-vuelos-bbva-e1513873444593.jpg");
+    
+    /* background-position: center center; */
+    background-size:cover; 
+    background-repeat:no-repeat;
+}
+
+.input {
+    background-color: hsla(0, 0%, 1%, 0.281);
+    border: .1rem solid rgba(124, 124, 124, 0.493);
+    border-radius: 1rem;
+     text-shadow: center;
+     width: 200px;
+     height: 30px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color: #f4f7f8;
+     font-size: 15px;
+     backdrop-filter: blur(0.2rem);
+     cursor: pointer;
+     transition: 0.9s;
+
+}
+
+.input:hover{
+    background-color: rgba(8, 8, 8, 0.644);  }
+
+    .card {
+        width:auto;
+        height:auto;
+        margin: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+        backdrop-filter: blur(0.2rem);
+        background-color: hsla(0, 0%, 1%, 0.281);
+        border: .1rem solid rgba(124, 124, 124, 0.493);
+        font-size: 15px;
+        
+        
+        
+    }
+
+    .card h1 {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        font-style: italic;
+
+    }
+
+    .card h2 {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        
+    }
+    .card h3 {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        
+    }
+
+    .card h4 {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        
+    }
+
+    
+
+    

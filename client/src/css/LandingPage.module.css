@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-image:url("https://www.bbva.com/wp-content/uploads/2017/12/billetes-avion-viajes-tarifas-comparacion-precios-ahorro-compra-vuelos-bbva-e1513873444593.jpg");
+    background-position: center center;
+    background-size:cover;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.name {
+    color: rgba(255, 255, 255, 0.897);
+    margin-top: 10px;
+    font-size: 50px;
+    padding-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: start;
+    margin-left: 40px;
+ }
+
+ .button {
+     background-color: transparent;
+     border: 2px solid #f4f7f8;
+     border-radius: 1rem;
+     text-shadow: center;
+     width: 200px;
+     height: 50px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color: #f4f7f8;
+     font-size: 30px;
+     font-style:italic;
+     cursor: pointer;
+     transition: 0.9s;      
+
+ }
+
+ .div {
+    display: flex;
+    justify-content: start;
+    margin-left: 40px; 
+ }

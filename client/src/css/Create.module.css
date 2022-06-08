@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-image:url("https://www.bbva.com/wp-content/uploads/2017/12/billetes-avion-viajes-tarifas-comparacion-precios-ahorro-compra-vuelos-bbva-e1513873444593.jpg");
+    background-attachment: fixed;
+    /* background-position: center center; */
+    background-size:cover; 
+    /* background-repeat:no-repeat; */
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.button {
+    background-color: hsla(0, 0%, 1%, 0.281);
+    border: .1rem solid rgba(124, 124, 124, 0.493);
+    backdrop-filter: blur(0.2rem);
+     border-radius: 1rem;
+     text-shadow: center;
+     width: 300px;
+     height: 30px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color: #f4f7f8;
+     font-size: 20px;
+     font-style:italic;
+     cursor: pointer;
+     transition: 0.9s;
+     margin: 20px;
+     
+}
+
+
+.container h1 {
+    background-color: hsla(0, 0%, 1%, 0.281);
+    border: .1rem solid rgba(124, 124, 124, 0.493);
+    backdrop-filter: blur(0.2rem);
+    color: white;
+    padding: 10px;
+
+}
+
+/* .diets {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto;
+    list-style-type: none;
+
+} */
+
+.container li {
+    cursor: pointer;
+    background-color: hsla(0, 0%, 1%, 0.281);
+    border: .1rem solid rgba(124, 124, 124, 0.493);
+    backdrop-filter: blur(0.2rem);
+     border-radius: 1rem;
+     text-shadow: center;
+     width: 200px;
+     margin: 10px;
+     
+
+}
+
+.select1 {
+    background-color: hsla(0, 0%, 1%, 0.281);
+   border: .1rem solid rgba(124, 124, 124, 0.493);
+   border-radius: 1rem;
+    text-shadow: center;
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f4f7f8;
+    font-size: 15px;
+    backdrop-filter: blur(0.2rem);
+    cursor: pointer;
+    transition: 0.9s;
+    transform: translateY(-3%);
+    margin-top: 10px;
+    
+}
+.select1:hover{
+    background-color: rgba(8, 8, 8, 0.644);
+     }
+
+     .input {
+        background-color: hsla(0, 0%, 1%, 0.281);
+        border: .1rem solid rgba(124, 124, 124, 0.493);
+        border-radius: 1rem;
+         text-shadow: center;
+         width: 200px;
+         height: 30px;
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         color: #f4f7f8;
+         font-size: 15px;
+         backdrop-filter: blur(0.2rem);
+         cursor: pointer;
+         transition: 0.9s;
+    
+    }
+    
+    .input:hover{
+        background-color: rgba(8, 8, 8, 0.644); 
+     }
+
+        .title{
+        font-size: 25px;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+
+        .p {
+            font-size: 20px;
+            color:hsl(0, 94%, 43%)
+        }
+
+        

@@ -19,7 +19,7 @@ const apiInfo = async () => {
                 population: c.population,
             }
         })
-
+        console.log(countries)
         return countries;
 
     }catch(error){
@@ -92,13 +92,14 @@ const findByName = async (req, res) => {
         const allNames = await Country.findAll({
             include: [{
                 model: Activity,
-                 attributes: ["name", "difficulty", "duration", "season"],
+                attributes: ["name", "difficulty", "duration", "season"],
                 through: {
                     attributes: [],
                 }
             }],
             where: {
                 name :name.charAt(0).toUpperCase()+name.slice(1).toLowerCase()
+                
             }
         });
         const findName = await allNames.map(e => {
@@ -159,7 +160,7 @@ const createActivity = async (req, res) => {
             where: {name: country}
         })
         newActivity?.addCountry(activityCountry);
-        res.sed("Actividad creada!")
+        res.send("Actividad creada!")
 
     }catch(error){
         console.log(error)
@@ -170,10 +171,10 @@ const createActivity = async (req, res) => {
 const continents = async (req, res) => {
     let countries = await apiInfo();
     let allContinents = [];
-    countries.map(c => allContinents.push(allContinents));
+    countries.map(c => allContinents.push(c.continents));
 
     const names = [... new Set(allContinents)]
-
+    console.log(names)
     res.status(200).json(names)
 }
 
@@ -194,8 +195,6 @@ const allActivities = async (req, res) => {
     res.send(name)
 }
 
-
-    
 
 
 

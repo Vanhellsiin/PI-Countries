@@ -1,24 +1,20 @@
-import { BrowserRouter, Route } from 'react-router-dom';
-import React from 'react';
-
 import './App.css';
-
+import { Route } from "react-router-dom";
+import LandingPage from './components/Landingpage';
+import Home from "./components/Home";
+import Detail from "./components/Detail";
+import NewActivity from './components/Create';
+import NavBar from "./components/navbar"
 
 function App() {
   return (
-    <BrowserRouter>
-      <React.Fragment>
-       <div className='App'>
-      <Route path='/home' component={Nav}/>
-
-      <Route exact path="/" component={LandingPage}/>
-      <Route exact path='/home' component={Home}/>
-      <Route exact path='/countries/AddActivity' component={AddActivity}/>
-      <Route path='/countries/:id' component={Detail}/>
-      </div>
-
-      </React.Fragment>
-    </BrowserRouter>
+    <div className="App">
+      <Route exact path="/home" render={() =><NavBar/>}/>
+      <Route exact path="/" render={() =><LandingPage/>}/>
+      <Route exact path="/home" render={() =><Home/>}/>
+      <Route exact path="/countries/:id" render={() =><Detail/>}/>
+      <Route exact path="/activity" render={() => <NewActivity/>}/>
+    </div>
   );
 }
 

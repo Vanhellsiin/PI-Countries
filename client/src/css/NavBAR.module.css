@@ -1,0 +1,46 @@
+.nav {
+    backdrop-filter: blur(0.2rem);
+    background-color: hsla(0, 0%, 1%, 0.281);
+    border: .1rem solid rgba(124, 124, 124, 0.493);
+ 
+}
+
+
+     
+ .nav li a:hover:not(.active) {background-color: rgba(10, 10, 10, 0.493);}
+
+.container {
+    display: flex ;
+    justify-content:space-evenly;
+}
+
+
+
+.button {
+    
+        background-color: hsla(0, 0%, 1%, 0.281);
+        border: .1rem solid rgba(124, 124, 124, 0.493);
+        backdrop-filter: blur(0.2rem);
+         border-radius: 1rem;
+         text-shadow: center;
+         width: 200px;
+         height: 30px;
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         color: #f4f7f8;
+         font-size: 15px;
+         font-style:italic;
+         cursor: pointer;
+         transition: 0.9s;
+           
+    }
+    
+    .button:hover{
+        transform: translateY(-3%);
+        box-shadow: 0 12px 16px rgba (0, 0, 0, 0.2);
+        transition: all 400ms ease;
+    } 
+    
+    .button:hover{
+        background-color: rgba(8, 8, 8, 0.644);
+    }
+    

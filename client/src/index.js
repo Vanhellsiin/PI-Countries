@@ -3,15 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from 'react-redux'
-import { store } from './store'
-
-// Todo lo que envuelve el "provider" puede acceder al store de redux.
-
+import { Provider } from "react-redux";
+import { store } from "../src/redux/store";
+import { BrowserRouter } from "react-router-dom"
 
 ReactDOM.render(
-  <Provider store = {store}>
-    <App />
+  <Provider store={store}>
+  <React.Fragment>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.Fragment>
   </Provider>,
   document.getElementById('root')
 );

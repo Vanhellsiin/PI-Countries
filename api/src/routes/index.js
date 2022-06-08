@@ -1,6 +1,6 @@
 const { Router } = require('express');
-
 const { getCountries, findByName, findById, createActivity, newRequire, continents, allActivities} = require("../routes/Controllers")
+
 
 const router = Router();
 
@@ -14,6 +14,11 @@ const router = Router();
  router.post("/activity", createActivity),
  router.get("/continents", continents),
  router.get("/activities", allActivities)
+
+
+
+
+
 
 
 module.exports = router;
